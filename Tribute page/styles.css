@@ -1,0 +1,165 @@
+:root {
+    font-size: 16px;
+    box-sizing: border-box;
+  
+    --bg-color: #f9f4ef;
+    --headline-color: #020826;
+    --text-color: #716040;
+    --time-color: #8c7851;
+    --secondary-color: #eaddcf; 
+    --media-caption-color: #8c7851;
+    --tertiary-color: #f25042;
+    --border-color: #020826;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-y: scroll; /* Adds a consistent scrollbar to prevent layout shift */
+    background-color: var(--bg-color);
+}
+
+.header {
+    padding: 1.4em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    text-decoration: none; 
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-bottom: 1px solid var(--text-color);
+}
+
+#title {
+    font-size: 2.4rem;
+    color: var(--headline-color);
+    margin-bottom: 0.15em;
+}
+
+#title-description {
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+#img-div {
+    background-color: var(--secondary-color); 
+    width: 80%;
+    padding: 3em 1.5em 1.5em;
+    margin: 0 auto;
+}
+
+#image {
+    display: block;
+    max-width: min(100%, 900px);
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    margin: 0 auto;
+}
+
+#img-caption {
+    color: #716040;
+    padding: 0 1em;
+    margin-top: 1.5em;
+}
+
+#tribute-info {
+    background-color: var(--secondary-color);
+    padding: 2em 1.5em;
+    margin: 2em auto 1em;
+    border-radius: 5px; 
+    max-width: 900px; 
+}
+
+#tribute-about {
+    background-color: var(--secondary-color); 
+    padding: 2em 1.5em;
+    margin: 2em auto 1em;
+    border-radius: 5px; 
+    max-width: 900px; 
+}
+
+.about {
+    color: var(--text-color);
+    padding-top: 1em;
+    margin: 2em 4em;
+    text-align: center;
+}
+
+.headline {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--headline-color);
+}
+
+.list-of-time {
+    padding: 0 4em;
+    margin-top: 1.2em;
+    font-size: 1.2rem;
+    text-align: justify;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.quote {
+    color: var(--text-color);
+    padding-top: 1em;
+    margin: 2em 4em;
+    text-align: center;
+}
+
+#quote {
+    background-color: var(--secondary-color); 
+    padding: 2em 1.5em;
+    margin: 2em auto 1em;
+    border-radius: 5px; 
+    max-width: 900px; 
+}
+
+.footer {
+    background-color: var(--media-caption-color); 
+    padding: 1.5em;
+    margin-top: 0; 
+    color: var(--border-color);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+
+/* Styling for the quote section */
+#quote-info {
+    background-color: var(--secondary-color); 
+    padding: 2em 1.5em;
+    margin: 2em auto 1em;
+    border-radius: 5px; 
+    max-width: 900px; 
+}
+
+/* Style for the horizontal line separating the headline from tribute info */
+.separator {
+    border: 0;
+    height: 1px;
+    background-color: var(--time-color);
+    margin: 2em auto;
+    width: 80%;
+}
