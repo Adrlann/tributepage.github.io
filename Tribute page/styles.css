@@ -1,68 +1,79 @@
 :root {
+    /* Base font size and box sizing setup */
     font-size: 16px;
     box-sizing: border-box;
-  
-    --bg-color: #f9f4ef;
-    --headline-color: #020826;
-    --text-color: #716040;
-    --time-color: #8c7851;
-    --secondary-color: #eaddcf; 
-    --media-caption-color: #8c7851;
-    --tertiary-color: #f25042;
-    --border-color: #020826;
+
+    /* Custom color variables for easy theming */
+    --bg-color: #f9f4ef; /* Background color for body */
+    --headline-color: #020826; /* Main headline text color */
+    --text-color: #716040; /* General text color */
+    --time-color: #8c7851; /* Color for timestamps or time indicators */
+    --secondary-color: #eaddcf; /* Light background color for sections */
+    --media-caption-color: #8c7851; /* Footer background color */
+    --tertiary-color: #f25042; /* Accent color for interactive elements */
+    --border-color: #020826; /* Border color for images and elements */
 }
 
 body {
+    /* Remove default margin and padding; set base styles */
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    overflow-y: scroll; /* Adds a consistent scrollbar to prevent layout shift */
-    background-color: var(--bg-color);
+    overflow-y: scroll; /* Ensures consistent scrollbar */
+    background-color: var(--bg-color); /* Sets the body background color */
 }
 
 .header {
+    /* Center-aligns header text with padding */
     padding: 1.4em 0;
     text-align: center;
 }
 
 nav ul {
-    list-style-type: none; 
+    /* Removes list styling and centers the navigation menu */
+    list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex; 
+    display: flex;
     justify-content: center;
 }
 
 nav ul li {
+    /* Space between navigation items */
     margin: 0 1em;
 }
 
 nav ul li a {
-    text-decoration: none; 
+    /* Styles navigation links with underline effect */
+    text-decoration: none;
     font-size: 1.2rem;
     font-weight: 700;
     border-bottom: 1px solid var(--text-color);
 }
 
 #title {
+    /* Main title styling */
     font-size: 2.4rem;
     color: var(--headline-color);
     margin-bottom: 0.15em;
 }
 
 #title-description {
+    /* Subtitle styling below the main title */
     font-size: 1.5rem;
     color: var(--text-color);
 }
 
 #img-div {
-    background-color: var(--secondary-color); 
+    /* Wrapper for image to add padding, background, and centered layout */
+    background-color: var(--secondary-color);
     width: 80%;
     padding: 3em 1.5em 1.5em;
     margin: 0 auto;
 }
 
 #image {
+    /* Ensures image responsiveness, adds border, and centers */
     display: block;
     max-width: min(100%, 900px);
     height: auto;
@@ -72,28 +83,23 @@ nav ul li a {
 }
 
 #img-caption {
+    /* Caption text styling */
     color: #716040;
     padding: 0 1em;
     margin-top: 1.5em;
 }
 
-#tribute-info {
+#tribute-info, #tribute-about {
+    /* Styles sections with similar appearance for information sections */
     background-color: var(--secondary-color);
     padding: 2em 1.5em;
     margin: 2em auto 1em;
-    border-radius: 5px; 
-    max-width: 900px; 
-}
-
-#tribute-about {
-    background-color: var(--secondary-color); 
-    padding: 2em 1.5em;
-    margin: 2em auto 1em;
-    border-radius: 5px; 
-    max-width: 900px; 
+    border-radius: 5px;
+    max-width: 900px;
 }
 
 .about {
+    /* Additional info styling for about section */
     color: var(--text-color);
     padding-top: 1em;
     margin: 2em 4em;
@@ -101,6 +107,7 @@ nav ul li a {
 }
 
 .headline {
+    /* Styling for main section headlines */
     font-size: 2.4rem;
     font-weight: 700;
     text-align: center;
@@ -108,6 +115,7 @@ nav ul li a {
 }
 
 .list-of-time {
+    /* List style for timeline or chronological information */
     padding: 0 4em;
     margin-top: 1.2em;
     font-size: 1.2rem;
@@ -117,6 +125,7 @@ nav ul li a {
 }
 
 .quote {
+    /* Style for quote text in center alignment */
     color: var(--text-color);
     padding-top: 1em;
     margin: 2em 4em;
@@ -124,17 +133,19 @@ nav ul li a {
 }
 
 #quote {
-    background-color: var(--secondary-color); 
+    /* Style for quote section with background and padding */
+    background-color: var(--secondary-color);
     padding: 2em 1.5em;
     margin: 2em auto 1em;
-    border-radius: 5px; 
-    max-width: 900px; 
+    border-radius: 5px;
+    max-width: 900px;
 }
 
 .footer {
-    background-color: var(--media-caption-color); 
+    /* Footer styling with background, padding, and text alignment */
+    background-color: var(--media-caption-color);
     padding: 1.5em;
-    margin-top: 0; 
+    margin-top: 0;
     color: var(--border-color);
     font-size: 0.9rem;
     font-weight: 700;
@@ -142,21 +153,24 @@ nav ul li a {
 }
 
 .footer a {
+    /* Footer link color and decoration */
     text-decoration: none;
     color: var(--tertiary-color);
 }
 
 /* Styling for the quote section */
 #quote-info {
-    background-color: var(--secondary-color); 
+    /* Quote box styling similar to other sections */
+    background-color: var(--secondary-color);
     padding: 2em 1.5em;
     margin: 2em auto 1em;
-    border-radius: 5px; 
-    max-width: 900px; 
+    border-radius: 5px;
+    max-width: 900px;
 }
 
-/* Style for the horizontal line separating the headline from tribute info */
+/* Style for the horizontal line separating sections */
 .separator {
+    /* Line styling for section separation */
     border: 0;
     height: 1px;
     background-color: var(--time-color);
